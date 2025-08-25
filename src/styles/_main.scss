@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+$blue: hsl(233, 26%, 24%);
+$green: hsl(136, 64%, 51%);
+$cyan: hsl(192, 69%, 51%);
+
+$gray600: hsl(233, 8%, 62%);
+$gray100: hsl(220, 16%, 96%);
+$gray50: hsl(0, 0%, 98%);
+$white: hsl(0, 100%, 100%);
+
+/*
+- Mobile: 375px
+- Desktop: 1440px
+- Font size: 18px
+
+.public-sans-<uniquifier> {
+  font-family: "Public Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+  
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $green;
+}
