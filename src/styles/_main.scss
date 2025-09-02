@@ -1,13 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
-$blue: hsl(233, 26%, 24%);
-$green: hsl(136, 64%, 51%);
-$cyan: hsl(192, 69%, 51%);
+$blue: hsl(233, 26%, 24%); // #2d314d
+$green: hsl(136, 64%, 51%); // #32d25d
+$cyan: hsl(192, 69%, 51%); // #2cb6d8
 
 $gray600: hsl(233, 8%, 62%);
 $gray100: hsl(220, 16%, 96%);
 $gray50: hsl(0, 0%, 98%);
 $white: hsl(0, 100%, 100%);
+
+@mixin displayFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /*
 - Mobile: 375px
@@ -20,10 +26,6 @@ $white: hsl(0, 100%, 100%);
   font-weight: <weight>;
   font-style: normal;
 }
-  
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
-
 */
 
 * {
@@ -33,5 +35,18 @@ $white: hsl(0, 100%, 100%);
 }
 
 body {
-  background-color: $green;
+  background-color: $white;
+
+  font-family: "Public Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  //justify-content: center;
+  align-items: center;
+
+  height: 100dvh;
 }

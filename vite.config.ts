@@ -5,16 +5,8 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   base: "/Digital-bank-landing-page",
-});
-
-/*
-// https://vite.dev/config/
-export default defineConfig({
-  plugins: [react()],
-  base: "/Shortly-App",
   server: {
     host: true,
     port: 5173,
   },
 });
-*/

@@ -1,0 +1,44 @@
+$blue: hsl(233, 26%, 24%); // #2d314d
+$gray600: hsl(233, 8%, 62%);
+$gray100: hsl(220, 16%, 96%);
+$gray50: hsl(0, 0%, 98%);
+$white: hsl(0, 100%, 100%);
+
+footer {
+  width: 100%;
+
+  background-color: $blue;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.footer_img {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.logo_container {
+  display: flex;
+  gap: 25px;
+
+  margin-bottom: 30px;
+}
+
+.footer_options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 20px;
+
+  color: $white;
+  margin-bottom: 30px;
+}
+
+.digital_bank {
+  margin-bottom: 40px;
+  color: $gray600;
+}
