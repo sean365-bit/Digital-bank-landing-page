@@ -43,6 +43,7 @@ nav {
   height: 375px;
 
   background-image: url("../../public/images/bg-intro-mobile.svg");
+
   background-repeat: no-repeat, repeat;
   background-position: center;
   background-size: cover;
@@ -82,21 +83,19 @@ nav {
   text-align: center;
 
   color: $gray600;
-  font-weight: 600;
-
+  font-weight: 500;
   margin-bottom: 30px;
 }
 
 .button {
-  height: 60px;
-  width: 200px;
+  height: 50px;
+  width: 180px;
 
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   color: $white;
-  background: $green;
-  border-radius: 30px;
   border: none;
+  border-radius: 30px;
 
   background: #2cb6d8;
   background: linear-gradient(
@@ -104,14 +103,80 @@ nav {
     rgba(44, 182, 216, 1) 0%,
     rgba(50, 210, 93, 1) 73%
   );
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: linear-gradient(
+      15deg,
+      rgba(44, 182, 216, 0.9) 0%,
+      rgba(50, 210, 93, 0.9) 73%
+    );
+
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    transform: translateY(-3px);
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .links {
     display: block;
   }
 
+  nav {
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  .page {
+    display: flex;
+    height: 100%;
+    color: $gray600;
+    font-weight: 600;
+
+    gap: 30px;
+  }
+
   .hamburguer {
     display: none;
+  }
+
+  .header_box {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .header_content {
+    width: 60%;
+
+    background-image: url("../../public/images/bg-intro-desktop.svg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center left;
+  }
+
+  .header_body {
+    width: 40%;
+  }
+
+  .header_hero,
+  .header_prg {
+    text-align: left;
+  }
+
+  .button_container {
+    width: 80%;
+  }
+
+  .mobile_phone {
+    width: 600px;
+    top: 250px;
+    left: 85%;
   }
 }

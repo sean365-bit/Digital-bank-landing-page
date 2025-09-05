@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Check out my code solution](https://github.com/sean365-bit/Digital-bank-landing-page)
+- Live Site URL: [Check out the live site](https://sean365-bit.github.io/Digital-bank-landing-page/)
 
 ## My process
 

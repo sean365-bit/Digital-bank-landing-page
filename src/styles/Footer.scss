@@ -1,8 +1,9 @@
-$blue: hsl(233, 26%, 24%); // #2d314d
+$blue: hsl(233, 26%, 24%);
 $gray600: hsl(233, 8%, 62%);
 $gray100: hsl(220, 16%, 96%);
 $gray50: hsl(0, 0%, 98%);
 $white: hsl(0, 100%, 100%);
+$green: hsl(136, 64%, 51%); // #32d25d
 
 footer {
   width: 100%;
@@ -38,7 +39,66 @@ footer {
   margin-bottom: 30px;
 }
 
+.footer_options p {
+  cursor: pointer;
+
+  transition: transform 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+    color: $green;
+  }
+}
+
 .digital_bank {
   margin-bottom: 40px;
   color: $gray600;
+}
+
+.socialIcons {
+  cursor: pointer;
+
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.request_btn {
+  height: 50px;
+  width: 180px;
+
+  font-size: 16px;
+  font-weight: 600;
+  color: $white;
+  border: none;
+  border-radius: 30px;
+  margin-bottom: 20px;
+
+  background: #2cb6d8;
+  background: linear-gradient(
+    15deg,
+    rgba(44, 182, 216, 1) 0%,
+    rgba(50, 210, 93, 1) 73%
+  );
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: linear-gradient(
+      15deg,
+      rgba(44, 182, 216, 0.9) 0%,
+      rgba(50, 210, 93, 0.9) 73%
+    );
+
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    transform: translateY(-3px);
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  }
 }

@@ -14,15 +14,40 @@ const Footer = () => {
       </div>
 
       <div className="logo_container">
-        <img src={facebook} alt="social media logo" loading="lazy" />
+        <img
+          src={facebook}
+          alt="social media logo"
+          loading="lazy"
+          className="socialIcons"
+        />
 
-        <img src={youtube} alt="social media logo" loading="lazy" />
+        <img
+          src={youtube}
+          alt="social media logo"
+          loading="lazy"
+          className="socialIcons"
+        />
 
-        <img src={twitter} alt="social media logo" loading="lazy" />
+        <img
+          src={twitter}
+          alt="social media logo"
+          loading="lazy"
+          className="socialIcons"
+        />
 
-        <img src={pinterest} alt="social media logo" loading="lazy" />
+        <img
+          src={pinterest}
+          alt="social media logo"
+          loading="lazy"
+          className="socialIcons"
+        />
 
-        <img src={instagram} alt="social media logo" loading="lazy" />
+        <img
+          src={instagram}
+          alt="social media logo"
+          loading="lazy"
+          className="socialIcons"
+        />
       </div>
 
       <div className="footer_options">
@@ -33,6 +58,8 @@ const Footer = () => {
         <p>Support</p>
         <p>Privacy Policy</p>
       </div>
+
+      <button className="request_btn">Request Invite</button>
 
       <p className="digital_bank">© Digitalbank. All Rights Reserved</p>
     </footer>

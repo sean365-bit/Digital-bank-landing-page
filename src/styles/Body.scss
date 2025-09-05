@@ -2,7 +2,7 @@
 
 .body {
   width: 100%;
-  background: $gray100;
+  background: $gray50;
 }
 
 .body_tittle {
@@ -21,7 +21,7 @@
   margin-bottom: 30px;
   width: 80%;
   text-align: center;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .body_prg {
@@ -29,7 +29,7 @@
   text-align: center;
 
   color: $gray600;
-  font-weight: 600;
+  font-weight: 500;
 
   margin-bottom: 30px;
 }
@@ -67,6 +67,39 @@
   text-align: center;
 
   color: $gray600;
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 992px) {
+  .body_tittle {
+    margin-top: 60px;
+  }
+
+  .body_hero,
+  .body_prg {
+    width: 93%;
+    text-align: left;
+  }
+
+  .line_break {
+    display: none;
+  }
+
+  .features_container {
+    flex-direction: row;
+    padding: 50px;
+  }
+
+  .features {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: baseline;
+  }
+
+  .features_tittle,
+  .features_info {
+    text-align: left;
+  }
 }

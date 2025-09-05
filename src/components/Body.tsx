@@ -9,13 +9,14 @@ const Body = () => {
     <section className="body">
       <div className="body_tittle">
         <p className="body_hero">
-          Why choose <br />
+          Why choose <br className="line_break" />
           Digitalbank?
         </p>
 
         <p className="body_prg">
           We leverage Open Banking to turn your bank account into your financial
-          hub. Control your finances like never before.
+          hub. <br />
+          Control your finances like never before.
         </p>
       </div>
 
@@ -26,6 +27,7 @@ const Body = () => {
             alt="icon"
             loading="lazy"
             className="img_icon"
+            draggable="false"
           />
           <div className="features_tittle">Online Banking</div>
           <div className="features_info">
@@ -40,6 +42,7 @@ const Body = () => {
             alt="icon"
             loading="lazy"
             className="img_icon"
+            draggable="false"
           />
           <div className="features_tittle">Simple Budgeting</div>
           <div className="features_info">
@@ -54,6 +57,7 @@ const Body = () => {
             alt="icon"
             loading="lazy"
             className="img_icon"
+            draggable="false"
           />
           <div className="features_tittle">Fast Onboarding</div>
           <div className="features_info">
@@ -63,7 +67,13 @@ const Body = () => {
         </div>
 
         <div className="features">
-          <img src={apiIcon} alt="icon" loading="lazy" className="img_icon" />
+          <img
+            src={apiIcon}
+            alt="icon"
+            loading="lazy"
+            className="img_icon"
+            draggable="false"
+          />
           <div className="features_tittle">Open API</div>
           <div className="features_info">
             Manage your savings, investments, pension, and much more from one

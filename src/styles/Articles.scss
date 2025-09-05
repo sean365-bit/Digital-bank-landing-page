@@ -2,7 +2,6 @@
 
 .articles {
   width: 100%;
-  background-color: $gray50;
 }
 
 .articles_heading {
@@ -30,6 +29,8 @@
   align-items: center;
 
   width: 80%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
 
 .last_article {
@@ -42,7 +43,7 @@
 }
 
 .text_container {
-  max-width: 80%;
+  padding: 20px;
 }
 
 .author {
