@@ -73,13 +73,13 @@ nav {
   color: $blue;
   font-size: 42px;
   margin-bottom: 30px;
-  width: 80%;
+  width: 100%;
   text-align: center;
   font-weight: 600;
 }
 
 .header_prg {
-  width: 80%;
+  width: 85%;
   text-align: center;
 
   color: $gray600;
@@ -161,8 +161,10 @@ nav {
     background-position: center left;
   }
 
+  /* */
   .header_body {
     width: 40%;
+    margin-left: 50px;
   }
 
   .header_hero,
@@ -170,8 +172,12 @@ nav {
     text-align: left;
   }
 
-  .button_container {
-    width: 80%;
+  .header_prg {
+    width: 100%;
+  }
+
+  .button_containered {
+    width: 100%;
   }
 
   .mobile_phone {

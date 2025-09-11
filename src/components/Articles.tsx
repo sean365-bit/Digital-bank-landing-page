@@ -10,76 +10,68 @@ const Articles = () => {
       <p className="articles_heading">Latest Articles</p>
 
       <div className="articles_container">
-        <div className="article">
-          <img
-            src={moneyImg}
-            alt="currency image"
-            loading="lazy"
-            className="article_img"
-          />
-          <div className="text_container">
-            <p className="author">By Claire Robinson</p>
-            <p className="article_tittle">
+        <div className="card">
+          <div className="card_image">
+            <img src={moneyImg} alt="currency image" loading="lazy" />
+          </div>
+          <p className="image_description">By Claire Robinson</p>
+
+          <div className="card_content">
+            <h3 className="card_title">
               Receive money in any currency with no fees
-            </p>
-            <p className="article_content">
+            </h3>
+            <p className="card_text">
               The world is getting smaller and we’re becoming more mobile. So
               why should you be forced to only receive money in a single …
             </p>
           </div>
         </div>
 
-        <div className="article">
-          <img
-            src={dinnerImg}
-            alt="currency image"
-            loading="lazy"
-            className="article_img"
-          />
-          <div className="text_container">
-            <p className="author">By Wilson Hutton</p>
-            <p className="article_tittle">
+        <div className="card">
+          <div className="card_image">
+            <img src={dinnerImg} alt="dinner" loading="lazy" />
+          </div>
+          <p className="image_description">By Wilson Hutton</p>
+
+          <div className="card_content">
+            <h3 className="card_title">
               Treat yourself without worrying about money
-            </p>
-            <p className="article_content">
+            </h3>
+            <p className="card_text">
               Our simple budgeting feature allows you to separate out your
               spending and set realistic limits each month. That means you …
             </p>
           </div>
         </div>
 
-        <div className="article">
-          <img
-            src={planeImg}
-            alt="currency image"
-            loading="lazy"
-            className="article_img"
-          />
-          <div className="text_container">
-            <p className="author">By Wilson Hutton</p>
-            <p className="article_tittle">
+        <div className="card">
+          <div className="card_image">
+            <img src={planeImg} alt="airplane" loading="lazy" />
+          </div>
+          <p className="image_description">By Wilson Hutton</p>
+
+          <div className="card_content">
+            <h3 className="card_title">
               Take your Digitalbank card wherever you go
-            </p>
-            <p className="article_content">
+            </h3>
+            <p className="card_text">
               We want you to enjoy your travels. This is why we don’t charge any
               fees on purchases while you’re abroad. We’ll even show you …
             </p>
           </div>
         </div>
 
-        <div className="article last_article">
-          <img
-            src={conffetiImg}
-            alt="currency image"
-            loading="lazy"
-            className="article_img"
-          />
-          <div className="text_container">
-            <p className="author">By Claire Robinson</p>
-            <p className="article_tittle">
+        <div className="card last_article">
+          <div className="card_image">
+            <img src={conffetiImg} alt="conffeti" loading="lazy" />
+          </div>
+          <p className="image_description">By Claire Robinson</p>
+
+          <div className="card_content">
+            <h3 className="card_title">
               Our invite-only Beta accounts are now live!
-            </p>
-            <p className="article_content">
+            </h3>
+            <p className="card_text">
               After a lot of hard work by the whole team, we’re excited to
               launch our closed beta. It’s easy to request an invite through the
               site ...

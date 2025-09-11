@@ -51,7 +51,7 @@ const Header = () => {
             more.
           </p>
 
-          <div className="button_container">
+          <div className="button_containered">
             <button className="button">Request Invite</button>
           </div>
         </article>

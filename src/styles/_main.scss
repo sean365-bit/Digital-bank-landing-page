@@ -15,19 +15,6 @@ $white: hsl(0, 100%, 100%);
   align-items: center;
 }
 
-/*
-- Mobile: 375px
-- Desktop: 1440px
-- Font size: 18px
-
-.public-sans-<uniquifier> {
-  font-family: "Public Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-*/
-
 * {
   margin: 0;
   padding: 0;
@@ -40,14 +27,14 @@ body {
   font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
-  overflow-x: hidden;
 }
 
 .app {
   display: flex;
   flex-direction: column;
-  //justify-content: center;
+  // justify-content: center;
   align-items: center;
 
   height: 100dvh;
+  overflow-x: hidden;
 }
