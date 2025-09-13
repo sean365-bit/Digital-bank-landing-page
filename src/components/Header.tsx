@@ -1,8 +1,15 @@
+import { useState } from "react";
 import "../styles/Header.scss";
-import { HamburgerIcon, LogoDark } from "../assets/svgImages";
+import { HamburgerIcon, LogoDark, CloseIcon } from "../assets/svgImages";
 import mockups from "../../public/images/image-mockups.png";
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen((prev) => !prev);
+  };
+
   return (
     <header>
       <article className="header_container">
@@ -22,8 +29,13 @@ const Header = () => {
             <button className="button">Request Invite</button>
           </div>
 
-          <div className="hamburguer">
-            <HamburgerIcon />
+          <div className="hamburguer" onClick={toggleMenu}>
+            <div className={`icon ${isMenuOpen ? "fade-out" : "fade-in"}`}>
+              <HamburgerIcon />
+            </div>
+            <div className={`icon ${isMenuOpen ? "fade-in" : "fade-out"}`}>
+              <CloseIcon />
+            </div>
           </div>
         </nav>
       </article>
@@ -56,6 +68,18 @@ const Header = () => {
           </div>
         </article>
       </div>
+
+      {isMenuOpen && (
+        <div className="menu_overlay">
+          <div className="popup_menu">
+            <p>Home</p>
+            <p>About</p>
+            <p>Contact</p>
+            <p>Blog</p>
+            <p>Careers</p>
+          </div>
+        </div>
+      )}
     </header>
   );
 };
