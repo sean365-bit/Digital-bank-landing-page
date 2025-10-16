@@ -1,8 +1,14 @@
-@use "../styles/main" as *;
+@use "./main" as *;
 
 .body {
   width: 100%;
-  background: $gray50;
+  background: $gray100;
+}
+
+.body_section {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
 }
 
 .body_tittle {
@@ -25,6 +31,7 @@
 }
 
 .body_prg {
+  line-height: 25px;
   width: 80%;
   text-align: center;
 
@@ -65,21 +72,35 @@
 .features_info {
   width: 80%;
   text-align: center;
+  line-height: 25px;
 
   color: $gray600;
   font-weight: 400;
   margin-bottom: 30px;
 }
 
-@media only screen and (min-width: 992px) {
+@media (min-width: 768px) {
+  .body_section {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .body_section {
+    max-width: 1240px;
+  }
+
   .body_tittle {
-    margin-top: 60px;
+    margin-top: 45px;
   }
 
   .body_hero,
   .body_prg {
-    width: 93%;
+    width: 100%;
     text-align: left;
+
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   .line_break {
@@ -88,7 +109,8 @@
 
   .features_container {
     flex-direction: row;
-    padding: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   .features {

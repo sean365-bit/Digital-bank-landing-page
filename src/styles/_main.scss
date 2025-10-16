@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
-$blue: hsl(233, 26%, 24%); // #2d314d
-$green: hsl(136, 64%, 51%); // #32d25d
-$cyan: hsl(192, 69%, 51%); // #2cb6d8
+$blue: hsl(233, 26%, 24%);
+$green: hsl(136, 64%, 51%);
+$cyan: hsl(192, 69%, 51%);
 
 $gray600: hsl(233, 8%, 62%);
 $gray100: hsl(220, 16%, 96%);
@@ -13,28 +13,4 @@ $white: hsl(0, 100%, 100%);
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: $white;
-
-  font-family: "Public Sans", sans-serif;
-  font-size: 18px;
-  font-style: normal;
-}
-
-.app {
-  display: flex;
-  flex-direction: column;
-  // justify-content: center;
-  align-items: center;
-
-  height: 100dvh;
-  overflow-x: hidden;
 }

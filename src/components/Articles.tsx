@@ -61,7 +61,7 @@ const Articles = () => {
           </div>
         </div>
 
-        <div className="card last_article">
+        <div className="card">
           <div className="card_image">
             <img src={conffetiImg} alt="conffeti" loading="lazy" />
           </div>

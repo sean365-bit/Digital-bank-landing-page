@@ -30,16 +30,17 @@ const Header = () => {
           </div>
 
           <div className="hamburguer" onClick={toggleMenu}>
-            <div className={`icon ${isMenuOpen ? "fade-out" : "fade-in"}`}>
+            <div className={`icon ${isMenuOpen ? "fade_out" : "fade_in"}`}>
               <HamburgerIcon />
             </div>
-            <div className={`icon ${isMenuOpen ? "fade-in" : "fade-out"}`}>
+            <div className={`icon ${isMenuOpen ? "fade_in" : "fade_out"}`}>
               <CloseIcon />
             </div>
           </div>
         </nav>
       </article>
 
+      {/* current */}
       <div className="header_box">
         <article className="header_content">
           <img

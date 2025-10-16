@@ -1,8 +1,9 @@
-@use "../styles/main" as *;
+@use "./main" as *;
 
 .articles {
   width: 100%;
-
+  max-width: 480px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,25 +11,27 @@
 }
 
 .articles_heading {
+  width: 100%;
   color: $blue;
   font-size: 36px;
   text-align: center;
   font-weight: 500;
-
-  margin-top: 80px;
+  margin-top: 50px;
   margin-bottom: 30px;
 }
 
 .articles_container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 50px;
+  margin-bottom: 50px;
 }
+
 /* cards */
 .card {
-  width: 350px;
+  width: 330px;
   background-color: white;
   border-radius: 12px;
   overflow: hidden;
@@ -83,8 +86,14 @@
   margin-bottom: 5px;
 }
 
-.last_article {
-  margin-bottom: 40px;
+@media (min-width: 768px) {
+  .articles {
+    max-width: 720px;
+  }
+
+  .articles_container {
+    justify-content: space-evenly;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -101,5 +110,21 @@
 
   .last_article {
     margin-bottom: 0px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .articles_heading {
+    text-align: left;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .articles {
+    max-width: 1240px;
+  }
+
+  .articles_container {
+    gap: 20px;
   }
 }

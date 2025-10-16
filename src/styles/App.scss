@@ -1,0 +1,24 @@
+@use "./main" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $white;
+
+  font-family: "Public Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+}
+
+.app {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  overflow-x: hidden;
+}
