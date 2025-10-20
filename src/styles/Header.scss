@@ -2,17 +2,22 @@
 
 header {
   width: 100%;
-  max-width: 480px;
-  margin: 0 auto;
+
   position: relative;
+
+  background-color: $white;
+  z-index: 100;
 }
 
 .header_container {
   width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+
   height: 85px;
   @include displayFlex;
 
-  background-color: white;
+  background-color: $white;
   position: relative;
   z-index: 100;
 }
@@ -30,69 +35,6 @@ nav {
 
 .links {
   display: none;
-}
-
-.header_content {
-  height: 375px;
-
-  background-image: url("../../public/images/bg-intro-mobile.svg");
-
-  background-repeat: no-repeat, repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.mobile_phone {
-  width: 100%;
-  max-width: 480px;
-  margin: 0 auto;
-  height: auto;
-
-  position: absolute;
-  top: 190px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 1rem;
-}
-
-.header_body {
-  margin-bottom: 30px;
-  margin-top: 10px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.header_hero {
-  color: $blue;
-  font-size: 42px;
-
-  width: 100%;
-  text-align: center;
-  font-weight: 600;
-
-  margin-bottom: 25px;
-
-  padding-left: 25px;
-  padding-right: 25px;
-}
-
-.header_prg {
-  width: 100%;
-  max-width: 480px;
-
-  text-align: center;
-
-  color: $gray600;
-  font-weight: 500;
-
-  line-height: 25px;
-  margin-bottom: 25px;
-
-  padding-left: 25px;
-  padding-right: 25px;
 }
 
 .button {
@@ -151,7 +93,7 @@ nav {
   height: 250px;
   border-radius: 5px;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
-  background-color: white;
+  background-color: $white;
 
   display: flex;
   flex-direction: column;
@@ -226,13 +168,13 @@ nav {
 }
 
 @media screen and (min-width: 768px) {
-  header {
+  .header_container {
     max-width: 720px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  header {
+  .header_container {
     max-width: 1240px;
   }
 
@@ -289,35 +231,5 @@ nav {
 
   .hamburguer {
     display: none;
-  }
-
-  .header_box {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-
-  .header_content {
-    width: 60%;
-
-    background-image: url("../../public/images/bg-intro-desktop.svg");
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: center left;
-  }
-
-  .header_body {
-    width: 40%;
-  }
-
-  .header_hero,
-  .header_prg {
-    text-align: left;
-  }
-
-  .button_containered {
-    width: 100%;
-
-    padding-left: 25px;
-    padding-right: 25px;
   }
 }

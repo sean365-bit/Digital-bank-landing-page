@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "../styles/Header.scss";
 import { HamburgerIcon, LogoDark, CloseIcon } from "../assets/svgImages";
-import mockups from "../../public/images/image-mockups.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,36 +38,6 @@ const Header = () => {
           </div>
         </nav>
       </article>
-
-      {/* current */}
-      <div className="header_box">
-        <article className="header_content">
-          <img
-            src={mockups}
-            alt="mobile phones images"
-            loading="lazy"
-            className="mobile_phone"
-            draggable="false"
-          />
-        </article>
-
-        <article className="header_body">
-          <p className="header_hero">
-            Next generation <br />
-            digital banking
-          </p>
-
-          <p className="header_prg">
-            Take your financial life online. Your Digitalbank account will be a
-            one-stop-shop for spending, saving, budgeting, investing, and much
-            more.
-          </p>
-
-          <div className="button_containered">
-            <button className="button">Request Invite</button>
-          </div>
-        </article>
-      </div>
 
       {isMenuOpen && (
         <div className="menu_overlay">

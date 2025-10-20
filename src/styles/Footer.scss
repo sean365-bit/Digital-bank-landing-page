@@ -44,15 +44,33 @@ footer {
   text-align: center;
 }
 
-.footer_options p {
+.footer_options {
   cursor: pointer;
   margin-bottom: 20px;
 
-  transition: transform 0.3s ease, color 0.3s ease;
+  p {
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s ease;
 
-  &:hover {
-    transform: scale(1.1);
-    color: $green;
+    &:hover {
+      color: $green;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      width: 0;
+      height: 2px;
+      background-color: $white;
+      transition: width 0.3s ease;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
   }
 }
 
